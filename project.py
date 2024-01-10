@@ -1,12 +1,13 @@
 def ask_details():
     # Welcome message 
     print("Welcome to the Career Advisor!")
+    print("Please answer the following questions to find the best-suited role for you.")
 
     name = input("Please Enter Your Name: ").title()
     higher_edu = input("Please Enter Your Highest Education Qualification (UG/G/PG):").lower()
-
-    print("Please answer the following questions to find the best-suited role for you.")
-
+    while higher_edu not in ['ug', 'g', 'pg']:
+            print("Please enter 'UG', 'G' or 'PG'.")
+            higher_edu = input("Please Enter Your Highest Education Qualification (UG/G/PG):").lower()
     return name,higher_edu
 
 def ask_questions():
