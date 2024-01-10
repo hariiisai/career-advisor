@@ -11,11 +11,7 @@ def test_ask_details(monkeypatch):
 def test_ask_questions(monkeypatch):
     simulated_inputs = ['yes', 'no', 'no', 'no']  # Simulated user inputs
     expected_output = ['yes', 'no', 'no', 'no']
-
-    # Use monkeypatch to simulate user input
     monkeypatch.setattr('sys.stdin', io.StringIO('\n'.join(simulated_inputs)))
-
-    # Call the function that takes user input
     assert ask_questions() == expected_output
 
 def test_determine_role():
