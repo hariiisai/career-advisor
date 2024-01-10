@@ -9,7 +9,7 @@ To use the Career Advisor:
 
 1. **Clone the Repository:** Clone this repository to your local machine using the following command:
     ```
-    git clone https://github.com/your-username/career-advisor.git
+    git clone https://github.com/hariiisai/career-advisor
     ```
 2. **Run the Program:** Navigate to the project directory and run the Python script using a terminal or command prompt:
     ```
