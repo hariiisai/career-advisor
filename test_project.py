@@ -20,4 +20,7 @@ def test_ask_questions(monkeypatch):
 
 def test_determine_role():
     assert determine_role(['yes', 'no', 'yes', 'no']) == "Software Developer"
-
+    assert determine_role(['yes', 'no', 'no', 'no']) == "Software Engineer"
+    assert determine_role(['no', 'yes', 'no', 'yes']) == "Data Scientist"
+    assert determine_role(['no', 'yes', 'no', 'no']) == "Data Engineer"
+    assert determine_role(['no', 'no', 'no', 'no']) == "Support Engineer"
